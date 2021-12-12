@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        body {
+            min-width: 1880px;
+        }
+        .box {
+            margin: 25px;
+            display: table;
+            width: calc(100%-25px);
+            border: 1px solid #212121;
+            border-right: none;
+            border-bottom: none;
+            box-sizing: border-box;
+        }
+        .row {
+            display: table-row;
+            min-height: 50px;
+            box-sizing: border-box;
+        }
+        .cell {
+            display: table-cell;
+            box-sizing: border-box;
+        }
+        .cell-1 {
+            width: 140px;
+        }
+        
+        .row > div:first-child {
+            border-right: 1px solid #212121;
+            border-bottom: 1px solid #212121;
+        }
+        .inner {
+            display: table;
+            width: 100%;
+        }
+        .inner-row {
+            display: table-row;
+            height: 50px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .inner-row > div {
+            display: table-cell;
+            height: 100%;
+            border-right: 1px solid #212121;
+            border-bottom: 1px solid #212121;
+            box-sizing: border-box;
+            vertical-align: middle;
+        }
+        .inner-cell1 {
+            min-width: 140px;
+            word-break: break-all;
+        }
+        .inner-cell2 {
+            min-width: 80px;
+            word-break: break-all;
+
+        }
+        .inner-cell3 {
+            width: calc(calc(100%-360px) / 2);
+            word-break: break-all;
+        }
+        .inner-cell4 {
+            width: calc(calc(100%-360px) / 2);
+            
+            word-break: break-all;
+        }
+        .inner-cell1, .inner-cell2, .inner-cell3, .inner-cell4 > div {
+            box-sizing: border-box;
+            vertical-align: middle;
+        } 
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="row">
+            <div class="cell cell-1"></div>
+            <div class="cell cell-2">
+                <div class="inner">
+                    <div class="inner-row">
+                        <div class="inner-cell1">
+                            <div>1111111111111111111111111111111111111111111111111111111111111111111111111</div>
+                        </div>
+                        <div class="inner-cell2">
+                            <div>
+                                2132131231221321312312213213123122132131231221321312312213213123122132131231221321312312
+                            </div>
+                        </div>
+                        <div class="inner-cell3">
+                            <div>21321312312213213123122132131231221321312312213213123122132131231221321312312213213123122121321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231232131231221321312312213213123122132131231221321312312213213123122132131231221321312312</div>
+                        </div>
+                        <div class="inner-cell4">
+                            <div>21321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner">
+                    <div class="inner-row">
+                        <div class="inner-cell1">
+                            <div>1111111111111111111111111111111111111111111111111111111111111111111111111</div>
+                        </div>
+                        <div class="inner-cell2">
+                            <div>
+                                2132131231221321312312213213123122132131231221321312312213213123122132131231221321312312
+                            </div>
+                        </div>
+                        <div class="inner-cell3">
+                            <div>21321312312213213123122132131231221321312312213213123122132131231221321312312213213123122121321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231232131231221321312312213213123122132131231221321312312213213123122132131231221321312312</div>
+                        </div>
+                        <div class="inner-cell4">
+                            <div>21321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner">
+                    <div class="inner-row">
+                        <div class="inner-cell1">
+                            <div>1111111111111111111111111111111111111111111111111111111111111111111111111</div>
+                        </div>
+                        <div class="inner-cell2">
+                            <div>
+                                2132131231221321312312213213123122132131231221321312312213213123122132131231221321312312
+                            </div>
+                        </div>
+                        <div class="inner-cell3">
+                            <div>21321312312213213123122132131231221321312312213213123122132131231221321312312213213123122121321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231232131231221321312312213213123122132131231221321312312213213123122132131231221321312312</div>
+                        </div>
+                        <div class="inner-cell4">
+                            <div>21321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312213213123122132131231221321312312</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+</script>
+</html>
